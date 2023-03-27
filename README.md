@@ -16,7 +16,7 @@ If you would like to glance the whole PMEmo dataset and detailed description of 
 
 ### :pushpin: Project Approaches:
 
-  To deal with a sequence of input data and a sequence of target labels, we build up two models - Bidirectional LSTM Model and Transformer Encoder Model - to train separately with Adam as optimizer and mean square error as our loss function. After finishing training and validation for hyper-parameter tuning, we test a trained model with acoustic features and then predict emotion features using the trained model with tuned hyper-parameters. 
+  To deal with a sequence of input data and a sequence of target labels, we build up and train separately two models - Bidirectional LSTM Model and Transformer Encoder Model - to extract local patterns with Adam as optimizer and mean square error as our loss function. After finishing training and validation for hyper-parameter tuning, we test a trained model with acoustic features and then predict emotion features using the trained model with tuned hyper-parameters. 
 
   The `model_to_train` variable can be used to decide which model is to be trained. If assigning `”BiLSTM”` to the variable, Bidirectional LSTM Model will be trained. If assigning `”TransformerEncoder”` to the variable, Transformer Encoder Model will be trained.
 
