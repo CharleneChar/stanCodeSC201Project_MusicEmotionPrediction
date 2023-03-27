@@ -9,9 +9,10 @@ This repository holds Music Emotion Prediction project done during the period of
 
 ### :pushpin: Project Dataset:
 
-  Our main focus is on predicting a song’s perceived emotion features (i.e., arousal and valence) using acoustic features associated with a song every 10 second. Thus, we treat dynamic emotion features as our target labels and dynamic acoustic features as out input data.
-The dataset we are using is PMEmo Dataset from The PMEmo Dataset for Music Emotion Recognition (Zhang et al., [2018](https://dl.acm.org/doi/10.1145/3206025.3206037)).
+  The dataset we are using is PMEmo Dataset from The PMEmo Dataset for Music Emotion Recognition (Zhang et al., [2018](https://dl.acm.org/doi/10.1145/3206025.3206037)).
 If you would like to glance the whole PMEmo dataset and detailed description of it, you could click the above link to the paper. And after that, if you would like to save space, you could simply download the required files for this project from [here](https://drive.google.com/drive/folders/1JqynbSCXSBRhln9YsHI72FSYHPlTkadl?usp=share_link). 
+
+  Our main focus is on predicting a song’s perceived emotion features (i.e., arousal and valence) using acoustic features associated with a song every 10 second. Thus, we treat dynamic emotion features as our target labels and dynamic acoustic features as out input data. In order to match timeframe, we preprocess the data by using only timeframe starting from the 15.5 th second and ended at the 75.5 th second during a track. If a track isn't long enough to have 60 seconds after the 15.5 th second, we zero-pad it to ensure data consistency. 
 
 ### :pushpin: Project Approaches:
 
